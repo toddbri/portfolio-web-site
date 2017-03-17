@@ -5,27 +5,40 @@
     <title>Todd Briley</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./assets/code.js"></script>
   </head>
   <body>
     <div class="header">
-      <div class="loc">
-        <p><a href="#">LinkedIn</a></p>
-        <p><a href="#">Skills</a></p>
-        <p><a href="#">About</a></p>
-      </div>
-      <div class="roc">
-        <p><a href="#">Projects</a></p>
-        <p><a href="#">Other Interests</a></p>
-        <p><a href="#">GitHub</a></p>
+        <!-- <p id="picCenter"></p> -->
+        <p><a href="https://www.linkedin.com/in/todd-briley/" target="_blank">LinkedIn</a></p>
+        <p><a id="skills" href="#">Skills</a></p>
+        <p><a id="about" href="#">About</a></p>
+        <p><a id="projects" href="#">Projects</a></p>
+        <!-- <p><a href="#">Other Interests</a></p> -->
+        <p><a href="https://github.com/toddbri"  target="_blank">GitHub</a></p>
         <p><a href="#">Contact</a></p>
-      </div>
+        <!-- <p id="mouselocation"></p> -->
     </div>
-    <div class="main_content">
-      <p class="TJB">Todd Briley</p>
-      <hr class="line">
-  <p>Full Stack Web Developer.</p>
-      <p>Currently a student at Digitalcrafts in Atlanta.</p>
-
+    <div class="middle-content-container">
+      <div class="picture-container">
+        <img id="picture" class="picture" src="./assets/me.jpeg">
+      </div>
+      <div class="main_content">
+        <p class="TJB">Todd Briley</p>
+        <hr class="line">
+        <p>Full Stack Web Developer.</p>
+        <p>Currently a student at DigitalCrafts in Atlanta.</p>
+      </div>
+      <div class="third_column">
+        <div class="about">This is my story and I'm sticking to it.
+        </div>
+        <div class="projects">These are all the wonderful things I've done. Enjoy!
+        </div>
+      </div>
     </div>
     <div class="footer">
       <div class="container">
@@ -39,7 +52,11 @@
       <img id="nodejs" src="./assets/nodejs.png">
       <img id="angular" src="./assets/angular.png">
       <img id="postgresql" src="./assets/postgresql-logo.png">
+      <img id="redux" src="./assets/redux.png">
     </div>
     </div>
+    <!-- <div class="vl50"></div>
+    <div class="vl35"></div> -->
+    <!-- <div class="vl50"></div> -->
   </body>
 </html>

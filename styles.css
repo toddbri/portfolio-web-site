@@ -1,17 +1,53 @@
 body {
-  margin: 0px;
-  padding:0px;
+  margin: 0;
+  padding:0;
   font-family: "Muli";
       }
+.vl50 {
+  height: 100vh;
+  position: absolute;
+  width: 50vw;
+  border-right: 1px solid red;
+  top: 0;
+  left: 0;
+}
+
+.vl35 {
+  height: 100vh;
+  position: absolute;
+  width: 35vw;
+  border-right: 1px solid red;
+  top: 0;
+  left: 0;
+}
+
+.header > p {
+  display: inline-block;
+  border-right: 1px solid black;
+  padding-right: 10px;
+  padding-left:10px;
+}
+
+.header > p:last-child {border-right: none;}
+
+.TJB {
+  font-size: 2.5em;
+}
 
 .header {
 padding-top: 5px;
-font-size: 1em;
+text-align: center;
         }
+
+.picture {
+  border-radius: 100%;
+  float:right;
+  margin-right: 17%;
+}
 
 .footer {
   position:fixed;
-  bottom:0px;
+  bottom:0;
   width: 100%;
   height: 80px;
   background-color: white;
@@ -25,18 +61,45 @@ font-size: 1em;
 }
 .main_content{
   text-align: center;
+  float:left;
+  width: 30%;
 }
 
-.TJB {
-  padding-top:10%;
+.middle-content-container {
+  padding-top: 150px;
+
+}
+.about {
+  display:none;
+}
+
+.projects {
+
+  display:none;
+}
+.TJB {;
   font-size:3.5em;
-  margin: 10px;
-
+  margin-top: 0;
+  margin-bottom: 20px;
       }
-#bootstrap {margin-left:15px;}
-.line {width:30%;
+/*#bootstrap {margin-left:15px;}*/
+.line {width:100%;
 
 }
+.third-column {
+  width: 29%;
+}
+
+.picture-container {
+  width:35%;
+  float: left;
+
+}
+
+@keyframes straightAhead {
+  to {transform: rotate(0deg);}
+}
+
 .loc {
   float:left;
   width:42%;
@@ -44,28 +107,7 @@ font-size: 1em;
   /*border:1px solid red;*/
 
 }
-.loc p {
-float:right;
-padding-left:3px;
-padding-right:3px;
-border-right: 1px solid black;
-padding-right: 10px;
-padding-left:10px;
-}
-.roc {
-  float:left;
-  width:53%;
-  /*border:1px solid red;*/
 
-}
-
-.roc p {
-  float:left;
-  padding-left:3px;
-  padding-right:10px;
-  padding-left: 10px;
-  border-left:1px solid black;
-}
 .header p {color:grey;}
-.loc p:first-child {border: none}
+/*.loc p:first-child {border: none}*/
 .header a {color:grey;}
