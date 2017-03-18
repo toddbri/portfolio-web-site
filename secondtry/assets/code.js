@@ -1,21 +1,61 @@
 
 $(document).ready(function(){
   // document.onmousemove = mouseMoved;
-  // document.body.onresize = whereIsPicture;
+  document.body.onresize = function (){
+
+
+
+    whereIsPicture();
+  };
   // whereIsPicture();
 
   jQuery(document).ready(function($) {
     $(".scroll").click(function(event){
         event.preventDefault();
+
+        $('html,body').animate({scrollTop:$(this.hash).offset().top - 50}, 700);
         if ($(this).attr('id')=='homenav') {
           $(this).addClass('hidden');
         } else {
-          $('#homenav').removeClass('hidden');
+          setTimeout(function(){$('#homenav').removeClass('hidden');},1200);
+
         }
-        $('html,body').animate({scrollTop:$(this.hash).offset().top - 50}, 700);
     });
 });
 
+});
+
+$(window).scroll(function() {
+    // var navHeight = $('.nav').height(),
+    //     documentHeight = $(document).height(),
+    //     windowHeight = $(window).height(),
+    // var topOfName = $('.TJB').offset().top;
+    // var    scroll = $(window).scrollTop();
+    //     // about = $('#about').offset().top,
+    //     // portfolio = $('#portfolio').offset().top;
+    //     console.log("tjb: " + (topOfName - scroll));
+    //     console.log("scroll: " + scroll);
+    if ($(window).scrollTop() < 100){
+      $('#homenav').addClass('hidden');
+
+    } else {$('#homenav').removeClass('hidden');}
+    // if (scroll >= about - navHeight) {
+    //     $('.menu li').removeClass('selected');
+    //     $('.about_button li').addClass('selected');
+    // }
+    // if (scroll >= portfolio - navHeight) {
+    //     $('.menu li').removeClass('selected');
+    //     $('.portfolio_button li').addClass('selected');
+    // }
+    // If at the top of the page, remove all selected classes
+    // if (scroll === 0) {
+    //     $('.menu li').removeClass('selected');
+    // }
+    // // If at bottom of page, add selected class on Contact
+    // if (scroll + windowHeight === documentHeight) {
+    //     $('.menu li').removeClass('selected');
+    //     $('.contact_button li').addClass('selected');
+    // }
 });
 
 var pictureCenterX;
