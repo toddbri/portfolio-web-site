@@ -14,19 +14,20 @@
   padding: 50px 75px;
   letter-spacing: 0.04em;
 }
+
 .content-text {
-  font-size: 1.5em;
+  font-size: 20px;
   letter-spacing: .05em;
 
 }
 .section-title {
-  font-size: 1.3em;
+  font-size: 22px;
   text-align: center;
   margin-bottom: 30px;
 }
 
 h2 {
-  font-size: 1.3em;
+  font-size: 30px;
 }
 
 .hidden {
@@ -35,7 +36,7 @@ h2 {
 }
 
 .vertical-center-line {
-  height:100vh;
+  height:100%;
   width: 0;
   border-right: 1px solid red;
   position: fixed;
@@ -43,13 +44,15 @@ h2 {
   left: 50%;
 }
 
+.clear-fix {clear:both;}
+
 /*-------------------------------------------*/
 /*              NAVBAR SECTION               */
 /*-------------------------------------------*/
 
 .navbar {
-  width:100vw;
-  height: 5vh;
+  width:100%;
+  height: 40px;
   position: fixed;
   top:0;
   left: 0;
@@ -57,7 +60,7 @@ h2 {
   color:black;
   background-color: white;
   letter-spacing: 1.5px;
-  font-size: 1em;
+  font-size: 15px;
 }
 
 .navbar > p {
@@ -70,7 +73,7 @@ h2 {
 
 }
 .navbar > p:last-child {
-  margin-right: 75px;
+  margin-right: 5%;
   border-right: none;
 }
 
@@ -85,21 +88,21 @@ h2 {
 
 .intro-container {
   width:100%;
-  height:100%;
+  height:540px;
   font-family: "Open Sans";
-  margin-top: 5vh;
-  font-size: 2em;
+  margin-top: 40px;
+  font-size: 25px;
   letter-spacing: 1.8px;
 }
 
 .desc {
-  font-size: 0.45em;
-  line-height: 2em;
+  font-size: 10px;
+  line-height: 30px;
 }
 
 
 .intro_left {
-  height: 70vh;
+  height: 100%;
   width:40%;
   float:left;
   background-color: black;
@@ -110,11 +113,11 @@ h2 {
 }
 
 .intro_right {
-  height: 70vh;
+  height: 100%;
   width: 60%;
   background-image: url("./assets/ss2.png");
   background-repeat: no-repeat;
-  background-size: auto auto;
+  background-size: cover;
   background-color: black;
   text-align: center;
   margin: 0;
@@ -123,14 +126,14 @@ h2 {
 
 
 .TJB {
-  margin-top: 25vh;
+  margin-top: 195px;
   letter-spacing: 1.5px;
   padding-bottom: 0;
   margin-bottom: 20px;
-  font-size: 1.9em;
+  font-size: 50px;
 }
 
-.line {width: 60%;
+.line {width: 285px;
   margin: auto;
   margin-bottom: 30px;
 }
@@ -154,19 +157,19 @@ h2 {
   background-color: white;
   color: black;
   clear:left;
-  padding-left: 0px;
-
+  /*padding-left: 0px;*/
+  text-align: center;
 }
 
 #about-me {
-  width: 62vw;
+  /*width: 62vw;*/
 }
 
 .picture-container {
   width: 20%;
   float: left;
   text-align: center;
-  padding-top: 5vh;
+  padding-top: 40px;
 }
 .right-of-pic {
   float:left;
@@ -176,6 +179,15 @@ h2 {
 .picture {
     border-radius: 100%;
     height: 20vh;
+    float:left;
+    margin: 10px;
+    border: 5px solid white;
+    margin-right: 40px;
+}
+
+#about_me_content {
+  text-align: left;
+
 }
 
 .inneraboutme {
@@ -183,7 +195,7 @@ h2 {
   text-align: center;
 }
 
-
+.xyz {text-align: center;}
 /*-------------------------------------------*/
 /*             PROJECTS SECTION              */
 /*-------------------------------------------*/
@@ -252,7 +264,85 @@ h2 {
   margin-right: 10px;
 }
 
-#mail-icon {
+/*#mail-icon {
   height: 48px;
 
+}*/
+
+
+/*iPhone 5 (portrait Mode)*/
+
+/*@media only screen and (min-device-width: 320px) and (max-device-width: 568px)
+and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) and (orientation:portrait)*/
+@media (max-width: 375px)
+{
+   .navbar {
+     text-align: center;
+     font-size: 10px;
+     letter-spacing: 0.5px;
+   }
+
+   .intro-container{
+     height: 400px;
+
+   }
+   .navbar > p {
+     margin-top: 20px;
+   }
+
+   .navbar > p:last-child {
+     margin-right: 0;
+     /*border-right: none;*/
+   }
+
+   .content-text {font-size: 18px;}
+
+   .TJB {
+     font-size: 20px;
+   }
+   .intro_left {
+     height: 100%;
+     width:50%;
+     float:left;
+     /*background-color: black;
+     text-align: center;
+     color:white;
+     margin: 0;
+     letter-spacing: 2.4px;*/
+   }
+
+   .intro_right {
+     height: 100%;
+     width: 50%;
+     /*background-image: url("./assets/ss2.png");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-color: black;
+     text-align: center;
+     margin: 0;
+     float: left;*/
+   }
+
+   .line {width: 120px;
+     margin: auto;
+     margin-bottom: 30px;
+   }
+   .picture {
+     height: 10vh;
+     margin-right: 55px;
+   }
+
+   .projects .project {
+
+     width: 80%;
+     height: 80%;
+   }
+
+   /*.section-title {
+     font-size: 3.2em;
+   }*/
+
+   .contact-icons {height: 70px;}
 }
+
+/*iPhone 5 (landscape Mode)*/

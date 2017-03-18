@@ -13,7 +13,7 @@ $(document).ready(function(){
     $(".scroll").click(function(event){
         event.preventDefault();
 
-        $('html,body').animate({scrollTop:$(this.hash).offset().top - 50}, 700);
+        $('html,body').animate({scrollTop:$(this.hash).offset().top - 40}, 700);
         if ($(this).attr('id')=='homenav') {
           $(this).addClass('hidden');
         } else {
