@@ -342,8 +342,7 @@ h2 {
 /*            iPhone 5 (landscape Mode)             */
 /*    i5 = max-width: 568px, i6 = max-width: 667    */
 
-@media (max-width: 667px) and (orientation: landscape)
-{
+@media (max-width: 667px) and (orientation: landscape){
 
   .section {
     height: 100%;
@@ -519,6 +518,43 @@ h2 {
    }
    .projects {
          padding: 50px 0px;
+   }
+
+   .intro_right {
+     height: 100%;
+     width: 50%;
+   }
+   .contact-icons {height: 47px;}
+
+   .skills_icons img {
+     height: 47px;
+     margin-top: 50px;
+   }
+
+}
+
+@media (max-width: 800px) and (min-width: 737px) and (orientation: portrait){
+
+   .navbar > p {
+     margin-top: 10px;
+   }
+
+   .content-text {font-size: 18px;}
+
+   .TJB {
+     margin-top: 125px;
+     font-size: 20px;
+   }
+
+   .intro_left {
+     height: 100%;
+     width:50%;
+     float:left;
+
+   }
+   
+   .projects {
+      padding: 50px 0px;
    }
 
    .intro_right {
