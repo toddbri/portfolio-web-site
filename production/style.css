@@ -210,23 +210,68 @@ h2 {
 .projects  .project {
   width: 300px;
   display: inline-block;
-  height: 300px;
-  background-color: black;
+  height: 375px;
+  background-color: #C8C9CC;
   margin: 15px;
   border-radius: 10px;
+  border: 1px solid black;
+}
+
+.project a div {
+  width: 300px;
+  height: 300px
+}
+
+.project-image {
+  width:300px;
+  height: 300px;
+  border-radius: 10px 10px 0px 0px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.project-description {
+  width: 300px;
+  height: 65px;
+  margin-top: 5px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: white;
+  padding-top: 5px;
+}
+
+.project-description button {
+  background-color:   #C8C9CC;
+  padding: 5px 10px;
+  margin: 0px 10px;
+  border: none;
+  border-radius: 5px;
+}
+.project-description a {
+  text-decoration: none;
+}
+
+.project-description p{
+  margin-bottom: 10px;
 }
 
 
 #project1 {
   background-image: url("./assets/blackjack.png");
-  background-size: 100% 100%;
+  /*background-size: 100% 100%;*/
 }
 
 #project2 {
   background-image: url("./assets/ttt.png");
-  background-size: 100% 100%;
+  /*background-size: 100% 100%;*/
 }
 
+
+.projects .placeholder {
+  background-color: black;
+}
+.placeholder .project-description {
+  display: none;
+}
 /*-------------------------------------------*/
 /*              SKILLS SECTION               */
 /*-------------------------------------------*/
@@ -325,7 +370,7 @@ h2 {
    }
    .projects .project {
      width: 300px;
-     height: 300px;
+     height: 375px;
      margin: 0px 0px 10px 0px;
    }
 
@@ -401,7 +446,7 @@ h2 {
    }
    .projects .project {
      width: 300px;
-     height: 300px;
+     height: 375px;
      margin: 0px 0px 10px 0px;
    }
 
@@ -552,7 +597,7 @@ h2 {
      float:left;
 
    }
-   
+
    .projects {
       padding: 50px 0px;
    }
