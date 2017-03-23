@@ -242,7 +242,7 @@ h2 {
 .project-description button {
   background-color:   #C8C9CC;
   padding: 5px 10px;
-  margin: 0px 10px;
+  margin: 8px 10px;
   border: none;
   border-radius: 5px;
 }
@@ -266,14 +266,27 @@ h2 {
 }
 
 
+#project3 {
+  background-image: url("./assets/catch-a-monster.png");
+  /*background-size: 100% 100%;*/
+}
+
+#project4 {
+  background-image: url("./assets/coming-soon.png");
+  /*background-size: 100% 100%;*/
+}
+#project5 {
+  background-image: url("./assets/coming-soon.png");
+  /*background-size: 100% 100%;*/
+}
 .projects .placeholder {
   background-color: black;
 }
 
 
-.placeholder .project-description {
+/*.placeholder .project-description {
   display: none;
-}
+}*/
 
 
 /*-------------------------------------------*/
