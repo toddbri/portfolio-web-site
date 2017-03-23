@@ -250,9 +250,9 @@ h2 {
   text-decoration: none;
 }
 
-.project-description p{
+/*.project-description p{
   margin-bottom: 10px;
-}
+}*/
 
 
 #project1 {
@@ -269,9 +269,13 @@ h2 {
 .projects .placeholder {
   background-color: black;
 }
+
+
 .placeholder .project-description {
   display: none;
 }
+
+
 /*-------------------------------------------*/
 /*              SKILLS SECTION               */
 /*-------------------------------------------*/
