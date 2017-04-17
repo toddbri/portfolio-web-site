@@ -321,7 +321,8 @@ h2 {
 .skills_icons img {
   height: 70px;
   margin-top: 50px;
-  border: 1px solid red;
+  margin-left: 40px;
+  /*border: 1px solid red;*/
 }
 
   /*-------------------------------------------*/
