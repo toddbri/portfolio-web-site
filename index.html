@@ -3,60 +3,163 @@
   <head>
     <meta charset="utf-8">
     <title>Todd Briley</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name = "viewport" content= "width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes"/>
+
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-    <script
-  src="https://code.jquery.com/jquery-3.1.1.js"
-  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-  crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,800" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="./assets/code.js"></script>
+    <link rel="icon" href="assets/npn_icon.jpg">
   </head>
   <body>
-    <div class="header">
-        <!-- <p id="picCenter"></p> -->
-        <p><a href="https://www.linkedin.com/in/todd-briley/" target="_blank">LinkedIn</a></p>
-        <p><a id="skills" href="#">Skills</a></p>
-        <p><a id="about" href="#">About</a></p>
-        <p><a id="projects" href="#">Projects</a></p>
-        <!-- <p><a href="#">Other Interests</a></p> -->
-        <p><a href="https://github.com/toddbri"  target="_blank">GitHub</a></p>
-        <p><a href="#">Contact</a></p>
-        <!-- <p id="mouselocation"></p> -->
+    <div class="navbar">
+        <p><a id="homenav" class="scroll hidden" href="#home">Home</a></p>
+        <p><a class="scroll" href="#about_me">About Me</a></p>
+        <p><a class="scroll" href="#projects">Projects</a></p>
+        <p><a class="scroll" href="#skills">Skills</a></p>
+        <p><a class="scroll" href="#contact">Contact</a></p>
     </div>
-    <div class="middle-content-container">
-      <div class="picture-container">
-        <img id="picture" class="picture" src="./assets/me.jpeg">
-      </div>
-      <div class="main_content">
+    <div class="intro-container" id="home">
+      <div class="intro_left">
         <p class="TJB">Todd Briley</p>
         <hr class="line">
-        <p>Full Stack Web Developer.</p>
-        <p>Currently a student at DigitalCrafts in Atlanta.</p>
+        <p class="desc">Full Stack Web Developer.</p>
+        <p class="desc">Currently a student at DigitalCrafts in Atlanta.</p>
       </div>
-      <div class="third_column">
-        <div class="about">This is my story and I'm sticking to it.
-        </div>
-        <div class="projects">These are all the wonderful things I've done. Enjoy!
-        </div>
+      <div class="intro_right">
       </div>
     </div>
-    <div class="footer">
-      <div class="container">
-      <!-- <img id="linkedin" src="./assets/In-2C-101px-R.png"> -->
-      <img id="html5" src="./assets/html5.png">
-      <img id="css" src="./assets/css3-logo.png">
-      <img id="python" src="./assets/Python-Logo-PNG-Image.png">
-      <img id="javascript" src="./assets/JavaScript-logo.png">
-      <img id="bootstrap" src="./assets/bootstrap-logo.png">
-      <img id="jquery" src="./assets/jquery.png">
-      <img id="nodejs" src="./assets/nodejs.png">
-      <img id="angular" src="./assets/angular.png">
-      <img id="postgresql" src="./assets/postgresql-logo.png">
-      <img id="redux" src="./assets/redux.png">
+    <div class="clear-fix"></div>
+
+
+    <div class="about_me section" id="about_me">
+      <!-- <div class="picture-container"> -->
+      <div class="section-title"><h2 class="section22" id="about-me">About me</h2></div>
+      <div class="outerContainer">
+        <div class="picContainer">
+          <img id="picture" class="picture" src="./assets/headshot-lr.jpg">
+        </div>
+        <div class="aboutMeTextContainer">
+          <p class="content-text" id="about_me_content">
+              Born and Raised in Fort Lauderdale, FL,  I moved to Atlanta to attend
+              Georgia Tech and never left. I have a Bachelors and Masters in Electrical Engineering
+               from Tech. During my career as an Electrical Engineer for an engineering company in Norcross and as a Technical Account Manager at Microsoft I have always loved to code. So I decided
+                to take the plunge and pursue it as a full-time career. When I'm not coding you can find
+                 me designing something electronic, fixing things for myself or neighbors, or playing tennis.
+                  The common thread that runs through all of those is my love of solving problems.
+          </p>
+        </div>
+      </div>
     </div>
+
+
+    <div class="projects section" id="projects">
+      <div class="section-title"><h2>Projects</h2></div>
+      <p id="projects_text"></p>
+
+
+      <div class="project">
+        <a href="http://blackjack.briley.org" target="_blank">
+          <div id="project1" class="project-image"></div>
+        </a>
+        <div class="project-description">
+          <p> HTML, CSS, jQuery, Javascript</p>
+          <a href="http://blackjack.briley.org" target="_blank">
+            <button>Demo</button>
+          </a>
+          <a href="https://github.com/toddbri/Blackjack" target="_blank">
+            <button>GitHub</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="project">
+        <a href="http://tic-tac-toe.briley.org" target="_blank">
+          <div id="project2" class="project-image"></div>
+        </a>
+        <div class="project-description">
+          <p> HTML, CSS, jQuery, Javascript</p>
+          <a href="http://tic-tac-toe.briley.org" target="_blank">
+            <button>Demo</button>
+          </a>
+          <a href="https://github.com/toddbri/Tic-Tac-Toe-Game-using-Jquery" target="_blank">
+            <button>GitHub</button>
+          </a>
+        </div>
+      </div>
+      <div class="project">
+        <a href="" target="_blank">
+          <div id="project3" class="project-image"></div>
+        </a>
+        <div class="project-description">
+          <p> Python, pygame</p>
+          <a href="" target="_blank">
+            <button>Demo</button>
+          </a>
+          <a href="https://github.com/toddbri/catch-the-monster" target="_blank">
+            <button>GitHub</button>
+          </a>
+        </div>
+      </div>
+      <!-- <div class="project">
+        <a href="#" target="_blank">
+          <div id="project4" class="project-image"></div>
+        </a>
+        <div class="project-description">
+          <p> HTML, CSS, jQuery, Javascript</p>
+          <a href="#" target="_blank">
+            <button>Demo</button>
+          </a>
+          <a href="#" target="_blank">
+            <button>GitHub</button>
+          </a>
+        </div> -->
+      <!-- </div>
+      <div class="project">
+        <a href="#" target="_blank">
+          <div id="project5" class="project-image"></div>
+        </a>
+        <div class="project-description">
+          <p> HTML, CSS, jQuery, Javascript</p>
+          <a href="#" target="_blank">
+            <button>Demo</button>
+          </a>
+          <a href="#" target="_blank">
+            <button>GitHub</button>
+          </a>
+        </div>
+      </div> -->
+
+
+
     </div>
-    <!-- <div class="vl50"></div>
-    <div class="vl35"></div> -->
-    <!-- <div class="vl50"></div> -->
+    <div class="skills section" id="skills">
+        <div class="section-title"><h2>Skills</h2></div>
+        <p class="content-text" id="skills_text">Over the years I've programmed in many different languages including
+           Assembly Language, VBScript, VB.Net, Java, Fortran, and C. Some a little and some alot. The latest additions to my skillset include HTML,
+         CSS, Python, JavaScript, Bootstrap, jQuery, nodeJS, and SQL.</p>
+        <div class="skills_icons">
+            <img id="html5" src="./assets/resized/html5.png">
+            <img id="css" src="./assets/resized/css3.png">
+            <img id="python" src="./assets/resized/python.png">
+            <img id="javascript" src="./assets/resized/javascript.png">
+            <img id="bootstrap" src="./assets/resized/bootstrap.png">
+            <img id="jquery" src="./assets/resized/jquery.png">
+            <img id="nodejs" src="./assets/resized/nodejs.png">
+            <!-- <img id="angular" src="./assets/angular.png"> -->
+            <img id="postgresql" src="./assets/resized/postgresql.png">
+            <!-- <img id="redux" src="./assets/redux.png"> -->
+          </div></div>
+    <div class="contact section" id="contact">
+          <div class="section-title"><h2>Contact</h2></div>
+          <p class="content-text" id="contact_text">If you think my skillset and experiences are a match for your problems, don't hesitate to contact me via email or Linked-In.</p>
+          <a href="https://www.linkedin.com/in/todd-briley/" target="_blank"><img class="contact-icons" src="./assets/linkedinbw.png"></a>
+          <a href="https://github.com/toddbri" target="_blank"><img id="middle" class="contact-icons" src="./assets/githubbw.png"></a>
+          <a href="mailto:todd.briley@outlook.com"><img id="mail-icon" class="contact-icons" src="./assets/email2.png"></a>
+
+      </div>
+
+      <!-- <div class="vertical-center-line"></div> -->
   </body>
 </html>
