@@ -151,11 +151,11 @@ h2 {
   /*              ABOUT ME                     */
   /*-------------------------------------------*/
 
-.outerContainer {
+/*.outerContainer {
   display: flex;
   display: -webkit-flex;
   align-items: center;
-}
+}*/
 
 #about_me{
   background-color: white;
@@ -191,7 +191,7 @@ h2 {
 }
 
 #about_me_content {
-  text-align: left;
+  text-align: center;
 
 }
 
@@ -201,15 +201,15 @@ h2 {
 }
 
 .picContainer {
-  width: 25%;
-
-  display: inline-block;
+  /*width: 25%;*/
+  margin-bottom: 40px;
+  /*display: inline-block;*/
   /*border: 1px solid red;*/
   /*float: left;*/
 }
 .aboutMeTextContainer {
-  width: 70%;
-  display: inline-block;
+  /*width: 70%;*/
+  /*display: inline-block;*/
   /*border: 1px solid pink;*/
   /*float:right;*/
 }
