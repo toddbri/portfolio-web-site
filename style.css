@@ -95,7 +95,7 @@ h2 {
 }
 
 .desc {
-  font-size: 10px;
+  font-size: 15px;
   line-height: 30px;
 }
 
@@ -349,20 +349,20 @@ h2 {
 
 .contact-icons {
   height: 40px;
-  margin-top: 50px;
+  /*margin-top: 50px;*/
+  margin: 50px 10px 0px 10px;
+  /*border: 1px solid red;*/
 }
 
-#middle {
-  margin-left: 10px;
-  margin-right: 10px;
+.contact-icons:last-child {
+  margin-right: 0px;
 }
 
-
-
-/*              iPhone 5 & 6(portrait Mode)               */
 /*        i5 = max-width: 320px, i6 = max-width: 375px    */
+/*        i6Plus = max-width: 414px    */
 
 /*@media (max-width: 375px) and (orientation: portrait) {*/
+
 @media (max-width: 414px) and (orientation: portrait) {
   .section {
     height: 100%;
@@ -381,6 +381,7 @@ h2 {
 
    .navbar > p {
      margin-top: 20px;
+     font-size: 15px;
    }
 
    .navbar > p:last-child {
@@ -410,6 +411,27 @@ h2 {
      margin: auto;
      margin-bottom: 30px;
    }
+
+   .outerContainer {
+      display: block;
+      text-align: center;
+   }
+
+   .picContainer {
+     display: block;
+     width: 100%;
+     margin-bottom: 25px;
+   }
+
+  .aboutMeTextContainer {
+    width: 100%;
+    text-align: center;
+  }
+
+  .content-text {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
    .picture {
      height: 85px;
      margin-right: 16px;
@@ -425,13 +447,30 @@ h2 {
    }
 
    .skills_icons img {
-     height: 20px;
-     margin-top: 50px;
+     height: 35px;
+     margin: 10px 10px 10px 0px;
    }
 
    .contact-icons {
-     height: 70px;
+     height: 50px;
    }
+}
+
+
+/* iPhone6 in portrait orientation */
+@media (max-width: 375px) and (orientation: portrait) {
+  .navbar > p {
+    margin-top: 22px;
+    font-size: 12px;
+  }
+}
+
+/* iPhone5 in portrait orientation */
+@media (max-width: 320px) and (orientation: portrait) {
+  .navbar > p {
+    margin-top: 22px;
+    font-size: 10px;
+  }
 }
 
 /*            iPhone 5 (landscape Mode)             */
@@ -567,7 +606,7 @@ h2 {
 @media (max-width: 414px) and (min-width: 376px) and (orientation: portrait){
 
    .navbar > p {
-     margin-top: 10px;
+     margin-top: 20px;
    }
 
    .content-text {font-size: 18px;}
@@ -631,13 +670,14 @@ h2 {
 @media (max-width: 800px) and (min-width: 737px) and (orientation: portrait){
 
    .navbar > p {
-     margin-top: 10px;
+     margin-top: 15px;
+     font-size: 20px;
    }
 
-   .content-text {font-size: 18px;}
+   /*.content-text {font-size: 25px;}*/
 
    .TJB {
-     margin-top: 125px;
+     margin-top: 180px;
      font-size: 20px;
    }
 
@@ -647,20 +687,80 @@ h2 {
      float:left;
 
    }
-
-   .projects {
-      padding: 50px 0px;
+   .outerContainer {
+      display: block;
+      text-align: center;
    }
 
-   .intro_right {
-     height: 100%;
-     width: 50%;
-   }
-   .contact-icons {height: 47px;}
-
-   .skills_icons img {
-     height: 47px;
-     margin-top: 50px;
+   .picContainer {
+     display: block;
+     width: 100%;
+     margin-bottom: 50px;
    }
 
+  .aboutMeTextContainer {
+    width: 100%;
+    text-align: center;
+  }
+
+
+  .content-text {
+    font-size: 25px;
+    margin-bottom: 40px;
+  }
+
+  #contact_text {
+    font-size: 25px;
+    margin-bottom: 40px;
+  }
+
+ .projects {
+    padding: 50px 0;
+ }
+
+ .intro_right {
+   height: 100%;
+   width: 50%;
+ }
+ .contact-icons {height: 47px;}
+
+ .skills_icons img {
+   height: 47px;
+   margin-top: 50px;
+ }
+
+}
+
+/*  iPad Pro in portrait orientation */
+@media (max-width: 1024px) and (min-width: 737px) and (orientation: portrait){
+  h2 {
+    font-size: 45px;
+  }
+
+  .navbar > p {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .outerContainer {
+     display: block;
+     text-align: center;
+  }
+
+  .picContainer {
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+ .aboutMeTextContainer {
+   width: 100%;
+   text-align: center;
+ }
+
+
+ .content-text {
+   font-size: 25px;
+   margin-bottom: 40px;
+ }
 }
